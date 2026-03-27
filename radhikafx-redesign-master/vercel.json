@@ -1,0 +1,34 @@
+{
+  "rewrites": [{ 
+      "source": "/(.*)",
+      "destination": "/" }],
+  "redirects": [
+    { "source": "/commodities-trading/", "destination": "/products/commodities", "permanent": true },
+    { "source": "/shares-trading/", "destination": "/products/shares", "permanent": true },
+    { "source": "/forex-trading/", "destination": "/products/forex", "permanent": true },
+    { "source": "/why-radhikafx/", "destination": "/about/why-radhikafx", "permanent": true },
+    { "source": "/indices-trading/", "destination": "/products/indices", "permanent": true },
+    {"source":"/platform/","destination":"/platforms/mt5","permanent":true},
+    {"source":"/radhika-faqs/","destination":"/about/faqs","permanent":true},
+    {"source":"/cpa-affiliate/","destination":"/partnership/cpa-affiliate","permanent":true},
+    {"source":"/ib-programme/","destination":"/partnership/ib-programme","permanent":true},
+    {"source":"/radhika-blogs/","destination":"/tools/education","permanent":true},
+    {"source":"/radhika-about/","destination":"/about-us","permanent":true},
+    {"source":"/trading-conditions/","destination":"/tools/trading-conditions","permanent":true},
+    {"source":"/account-types/","destination":"/accounts/comparison","permanent":true},
+    {"source":"/radhika-trading-platforms/","destination":"/platforms/mt5","permanent":true},
+    {"source":"/ib-program/","destination":"/partnership/ib-programme","permanent":true},
+    {"source":"/liquidity-services/","destination":"/partnership/liquidity-services","permanent":true},
+    {"source":"/standard/","destination":"/accounts/standard","permanent":true},
+    {"source":"/pro/","destination":"/accounts/pro","permanent":true},
+    {"source":"/cryptocurrency-trading/","destination":"/products/crypto","permanent":true},
+    {"source":"/career-radhika/","destination":"/about/careers","permanent":true},
+    {"source":"/our-achievements/","destination":"/about/achievements","permanent":true},
+    {"source":"/regulation/","destination":"/about/regulation","permanent":true},
+    {"source": "/open-live-account", "destination": "https://cabinet.radhikafx.com/en/register/account-types", "permanent": true},
+    {"source": "/open-live-account/", "destination": "https://cabinet.radhikafx.com/en/register/account-types", "permanent": true},
+    {"source": "/open-demo-account", "destination": "https://cabinet.radhikafx.com/en/register/demo/account", "permanent": true},
+    {"source": "/open-demo-account/", "destination": "https://cabinet.radhikafx.com/en/register/demo/account", "permanent": true}
+    
+  ]
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-navy: #091830;
+  /* Updated logic: Deep Navy/Black */
+  --color-gold: #60bd47;
+  --color-white: #ffffff;
+  --color-dark: #091830;
+  --color-black: #091830;
+  --color-card: rgba(5, 12, 24, 0.7);
+  --gradient-gold: linear-gradient(to right,
+       #60bd47 0%,
+      /* Dark Bronze/Gold */
+      #4A8739 100%
+      
+      /* Dark Bronze Finish */
+    );
+
+  --gradient-gold-hover: linear-gradient(to right, linear-gradient(273deg, #60bd47 0%, #4A8739 100%));
+
+
+  /* Fonts */
+  --font-heading: 'Google Sans', sans-serif;
+  --font-body: 'Google Sans', sans-serif;
+}
+
+/* Global H1 Style for Gold Gradient Theme */
+h1 {
+  @apply font-bold;
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  /* Fallback if text-fill-color fails? No, keep it transparent but background-clip handles it. */
+}
+
+/* Utility to force gold gradient text on other elements */
+.text-gold-gradient {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.hover-text-gold-gradient {
+  transition: all 0.3s ease;
+}
+
+.hover-text-gold-gradient:hover {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.stroke-gold-gradient {
+  stroke: #fff;
+  /* Overrides currentColor */
+  stroke-width: 2px;
+}
+
+/* Utility for gold gradient background (borders/buttons) */
+.bg-gold-gradient {
+  background: var(--gradient-gold);
+}
+
+/* Animated Button Gradient */
+.btn-gold {
+  background-image: var(--gradient-gold);
+  background-size: 200% auto;
+  transition: all 0.5s ease;
+  color: #02050a;
+  /* Ensure text is navy for contrast */
+}
+
+.btn-gold:hover {
+  background-position: right center;
+  box-shadow: 0 0 15px rgba(253, 224, 141, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Custom Utilities Variables */
+:root {
+  --glass-bg: rgba(5, 12, 24, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --blur: 10px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #050c18;
+  /* Matching the new navy color */
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-navy);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4c575;
+}
+
+/* Custom Animations */
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
